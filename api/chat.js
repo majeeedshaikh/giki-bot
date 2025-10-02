@@ -1,6 +1,6 @@
-const Groq = require('groq-sdk');
-const fs = require('fs');
-const path = require('path');
+import Groq from 'groq-sdk';
+import fs from 'fs';
+import path from 'path';
 
 // Initialize Groq client
 const groqClient = new Groq({
@@ -25,7 +25,7 @@ function getPDFContent() {
   }
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
