@@ -4,17 +4,12 @@
   "description": "GIKI Admissions Policy Chatbot using Groq API",
   "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
     "local": "node server.js",
-    "build": "echo 'No build step required'",
-    "start": "echo 'Deployed on Vercel'"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
     "groq-sdk": "^0.7.0"
-  },
-  "devDependencies": {
-    "vercel": "^32.0.0"
   },
   "keywords": [
     "chatbot",
